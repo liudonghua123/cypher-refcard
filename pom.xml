@@ -16,7 +16,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <neo4j.version>1.9.4</neo4j.version>
+    <neo4j.version>1.9.6</neo4j.version>
     <docs.tools>${project.build.directory}/tools</docs.tools>
     <docs.upstream>${project.build.directory}</docs.upstream>
     <docs.importdir>${docs.upstream}/docs</docs.importdir>
