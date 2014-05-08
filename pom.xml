@@ -97,7 +97,7 @@
           </execution>
           <execution>
             <id>create-refcard-dir</id>
-            <phase>deploy</phase>
+            <phase>verify</phase>
             <goals><goal>exec</goal></goals>
             <configuration>
               <executable>ssh</executable>
@@ -113,7 +113,7 @@
           </execution>
           <execution>
             <id>upload-refcard</id>
-            <phase>deploy</phase>
+            <phase>verify</phase>
             <goals><goal>exec</goal></goals>
             <configuration>
               <executable>rsync</executable>
