@@ -25,7 +25,7 @@ import org.neo4j.cypher.docgen.RefcardTest
 class UnwindTest extends RefcardTest with QueryStatisticsTestSupport {
   val graphDescription = List("ROOT ACTED_IN A:Person", "A ACTED_IN B:Person", "B ACTED_IN C:Person", "C ACTED_IN ROOT")
   val title = "UNWIND"
-  val css = "read c2-2 c3-2 c4-2 c5-2"
+  val css = "read c2-2 c3-2 c4-2 c5-2 c6-2"
 
   override def assert(name: String, result: ExecutionResult) {
     name match {
@@ -55,5 +55,5 @@ UNWIND nodes(p) as n
 
 RETURN n.name###
 
-Return a set of actors that form the shortest acquaintance links between Lucy Liu and Kevin Bacon."""
+Transform a collection back into individual rows."""
 }
